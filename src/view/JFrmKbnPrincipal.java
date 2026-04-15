@@ -43,7 +43,7 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMnuKbnCadastros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jMnuKbnCadastros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar_1.png"))); // NOI18N
         jMnuKbnCadastros.setMnemonic('c');
         jMnuKbnCadastros.setText("Kbn_Cadastros");
         jMnuKbnCadastros.addActionListener(new java.awt.event.ActionListener() {
@@ -53,11 +53,13 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         });
 
         jMnuKbnUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuKbnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuKbnUsuarios.setMnemonic('u');
         jMnuKbnUsuarios.setText("Kbn_Usuáros");
         jMnuKbnCadastros.add(jMnuKbnUsuarios);
 
         jMnuKbnClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuKbnClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuKbnClientes.setText("Kbn_Clientes");
         jMnuKbnCadastros.add(jMnuKbnClientes);
 
