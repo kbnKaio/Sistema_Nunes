@@ -23,7 +23,7 @@ public class JDlgKbnUsuarios extends javax.swing.JDialog {
         initComponents();
         setTitle("Telas de Usuários");
         this.setLocationRelativeTo(null);
-        Desabilitar();
+        desabilitar();
 
     }
 
@@ -35,16 +35,16 @@ public class JDlgKbnUsuarios extends javax.swing.JDialog {
         jPwfSenha.setEnabled(true);
         jCboNivel.setEnabled(true);
         JChbAtivo.setEnabled(true);
-        jBtnAlterar.setEnabled(true);
+        jBtnAlterar.setEnabled(false);
         jBtnCancelar.setEnabled(true);
         jBtnConfirmar.setEnabled(true);
-        jBtnExcluir.setEnabled(true);
-        jBtnIncluir.setEnabled(true);
-        jBtnPesquisar.setEnabled(true);
+        jBtnExcluir.setEnabled(false);
+        jBtnIncluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
 
     }
 
-    private void Desabilitar() {
+    private void desabilitar() {
         jTxtNome.setEnabled(false);
         jTxtApelido.setEnabled(false);
         jTxtCpf.setEnabled(true);
@@ -52,12 +52,12 @@ public class JDlgKbnUsuarios extends javax.swing.JDialog {
         jPwfSenha.setEnabled(false);
         jCboNivel.setEnabled(false);
         JChbAtivo.setEnabled(false);
-        jBtnAlterar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
         jBtnCancelar.setEnabled(false);
         jBtnConfirmar.setEnabled(false);
-        jBtnExcluir.setEnabled(false);
-        jBtnIncluir.setEnabled(false);
-        jBtnPesquisar.setEnabled(false);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
 
     }
 
@@ -272,12 +272,12 @@ public class JDlgKbnUsuarios extends javax.swing.JDialog {
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
         // TODO add your handling code here:
-        Desabilitar();
+        desabilitar();
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
         // TODO add your handling code here:
-        Desabilitar();
+        desabilitar();
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed

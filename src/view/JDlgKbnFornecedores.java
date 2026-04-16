@@ -16,8 +16,41 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
     public JDlgKbnFornecedores(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Tela de fornecedores");
          this.setLocationRelativeTo(null);
+         desabilitar();
     }
+    public void habilitar() {
+        jTxtNome.setEnabled(true);
+        jTxtApelido.setEnabled(true);
+        jTxtCpf.setEnabled(true);
+        jTxtDataNascimento.setEnabled(true);
+        jPwfSenha.setEnabled(true);
+        jCboNivel.setEnabled(true);
+        JChbAtivo.setEnabled(true);
+        jBtnAlterar.setEnabled(false);
+        jBtnCancelar.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+        jBtnExcluir.setEnabled(false);
+        jBtnIncluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
+
+    }
+
+    private void desabilitar() {
+        jTxtNome.setEnabled(false);
+        jTxtApelido.setEnabled(false);
+        jTxtCpf.setEnabled(true);
+        jTxtDataNascimento.setEnabled(false);
+        jPwfSenha.setEnabled(false);
+        jCboNivel.setEnabled(false);
+        JChbAtivo.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
 
     /**
      * This method is called from within the constructor to initialize the form.
