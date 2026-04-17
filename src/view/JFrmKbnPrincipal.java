@@ -51,6 +51,11 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuKbnUsuarios.setMnemonic('u');
         jMnuKbnUsuarios.setText("Kbn_Usuáros");
+        jMnuKbnUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuKbnUsuariosActionPerformed(evt);
+            }
+        });
         jMnuKbnCadastros.add(jMnuKbnUsuarios);
 
         jMnuKbnClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -153,6 +158,12 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         JDlgKbnFornecedores jDlgKbnFornecedores = new JDlgKbnFornecedores(null, true);
         jDlgKbnFornecedores.setVisible(true);
     }//GEN-LAST:event_jMnuKbnFornecedoresActionPerformed
+
+    private void jMnuKbnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuKbnUsuariosActionPerformed
+        JDlgKbnUsuarios jDlgKbnUsuarios = new JDlgKbnUsuarios(null, true);
+        jDlgKbnUsuarios.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuKbnUsuariosActionPerformed
 
     /**
      * @param args the command line arguments

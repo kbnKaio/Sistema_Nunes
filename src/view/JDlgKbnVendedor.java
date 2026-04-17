@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author u08016696180
@@ -39,8 +41,8 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
 
     public void desabilitar() {
         jBtnKbnAlterar.setEnabled(true);
-        jBtnKbnCancelar.setEnabled(false);
-        jBtnKbnConfirmar.setEnabled(false);
+        jBtnKbnCancelar.setEnabled(true);
+        jBtnKbnConfirmar.setEnabled(true);
         jBtnKbnExcluir.setEnabled(true);
         jBtnKbnIncluir.setEnabled(true);
         jBtnKbnPesquisar.setEnabled(true);
@@ -100,21 +102,51 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
 
         jBtnKbnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir_1.png"))); // NOI18N
         jBtnKbnIncluir.setText("Incluir");
+        jBtnKbnIncluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnIncluirActionPerformed(evt);
+            }
+        });
 
         jBtnKbnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir_1.png"))); // NOI18N
         jBtnKbnExcluir.setText("Excluir");
+        jBtnKbnExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnExcluirActionPerformed(evt);
+            }
+        });
 
         jBtnKbnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar_1.png"))); // NOI18N
         jBtnKbnCancelar.setText("Cancelar");
+        jBtnKbnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnCancelarActionPerformed(evt);
+            }
+        });
 
         jBtnKbnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnKbnAlterar.setText("Alterar");
+        jBtnKbnAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnAlterarActionPerformed(evt);
+            }
+        });
 
         jBtnKbnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnKbnPesquisar.setText("Pesquisar");
+        jBtnKbnPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnPesquisarActionPerformed(evt);
+            }
+        });
 
         jBtnKbnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnKbnConfirmar.setText("Confirmar");
+        jBtnKbnConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnConfirmarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -209,6 +241,36 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jBtnKbnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnCancelarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnKbnCancelarActionPerformed
+
+    private void jBtnKbnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnKbnAlterarActionPerformed
+
+    private void jBtnKbnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnPesquisarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null,"Entrar com o código de Vendedor.", "", JOptionPane.YES_NO_OPTION );
+    }//GEN-LAST:event_jBtnKbnPesquisarActionPerformed
+
+    private void jBtnKbnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnConfirmarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnKbnConfirmarActionPerformed
+
+    private void jBtnKbnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnExcluirActionPerformed
+        JOptionPane.showConfirmDialog(null, "confimar exclusao", "selecione", JOptionPane.YES_NO_OPTION);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnKbnExcluirActionPerformed
+
+    private void jBtnKbnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnIncluirActionPerformed
+        habilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnKbnIncluirActionPerformed
+
     /**
          * @param args the command line arguments
          */
@@ -274,4 +336,5 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
     private javax.swing.JTextField jTxtKbnSalario;
     private javax.swing.JTextField jTxtKbnTelefone;
     // End of variables declaration//GEN-END:variables
+
 }
