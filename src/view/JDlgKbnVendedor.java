@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *
  * @author u08016696180
  */
-public class JDlgKbnVendedor extends javax.swing.JDialog {
+public final class JDlgKbnVendedor extends javax.swing.JDialog {
 
     /**
      * Creates new form JDlgKbnFornecedor
@@ -41,8 +41,8 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
 
     public void desabilitar() {
         jBtnKbnAlterar.setEnabled(true);
-        jBtnKbnCancelar.setEnabled(true);
-        jBtnKbnConfirmar.setEnabled(true);
+        jBtnKbnCancelar.setEnabled(false);
+        jBtnKbnConfirmar.setEnabled(false);
         jBtnKbnExcluir.setEnabled(true);
         jBtnKbnIncluir.setEnabled(true);
         jBtnKbnPesquisar.setEnabled(true);
@@ -53,7 +53,7 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
         jTxtKbnTelefone.setEnabled(false);
         jFmtKbnDataAdmissao.setEnabled(false);
         jChbKbnAtivo.setEnabled(false);
-
+    }
         /**
          * This method is called from within the constructor to initialize the
          * form. WARNING: Do NOT modify this code. The content of this method is
@@ -253,7 +253,7 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
 
     private void jBtnKbnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnPesquisarActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null,"Entrar com o código de Vendedor.", "", JOptionPane.YES_NO_OPTION );
+        JOptionPane.showInputDialog(null, "Entre com o codguin de vendedor.");
     }//GEN-LAST:event_jBtnKbnPesquisarActionPerformed
 
     private void jBtnKbnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnConfirmarActionPerformed
@@ -262,7 +262,7 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnKbnConfirmarActionPerformed
 
     private void jBtnKbnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnExcluirActionPerformed
-        JOptionPane.showConfirmDialog(null, "confimar exclusao", "selecione", JOptionPane.YES_NO_OPTION);
+        JOptionPane.showConfirmDialog(null, "Confirmar Exclusão", "selecione", JOptionPane.YES_NO_OPTION);
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnKbnExcluirActionPerformed
 
@@ -300,17 +300,15 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
         //</editor-fold>
 
         /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                JDlgKbnVendedor dialog = new JDlgKbnVendedor(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            JDlgKbnVendedor dialog = new JDlgKbnVendedor(new javax.swing.JFrame(), true);
+            dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                @Override
+                public void windowClosing(java.awt.event.WindowEvent e) {
+                    System.exit(0);
+                }
+            });
+            dialog.setVisible(true);
         });
     }
 
@@ -337,4 +335,5 @@ public class JDlgKbnVendedor extends javax.swing.JDialog {
     private javax.swing.JTextField jTxtKbnTelefone;
     // End of variables declaration//GEN-END:variables
 
+  
 }

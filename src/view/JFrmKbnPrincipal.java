@@ -69,6 +69,7 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnCadastros.add(jMnuKbnClientes);
 
         jMnuKbnFornecedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuKbnFornecedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/grupo.png"))); // NOI18N
         jMnuKbnFornecedores.setText("Kbn_Fornecedores");
         jMnuKbnFornecedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,6 +79,7 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnCadastros.add(jMnuKbnFornecedores);
 
         jMnuKbnAnimais.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuKbnAnimais.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuKbnAnimais.setText("Kbn_Animais");
         jMnuKbnAnimais.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +89,7 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnCadastros.add(jMnuKbnAnimais);
 
         jMnuKbnVendedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuKbnVendedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuKbnVendedores.setText("Kbn_Vendedor");
         jMnuKbnVendedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,6 +101,11 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuKbnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
         jMnuKbnSair.setText("Sair");
+        jMnuKbnSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuKbnSairActionPerformed(evt);
+            }
+        });
         jMnuKbnCadastros.add(jMnuKbnSair);
 
         jMnuBKbnMenuBar.add(jMnuKbnCadastros);
@@ -128,7 +136,7 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGap(0, 278, Short.MAX_VALUE)
         );
 
         pack();
@@ -164,6 +172,11 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jDlgKbnUsuarios.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuKbnUsuariosActionPerformed
+
+    private void jMnuKbnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuKbnSairActionPerformed
+        System.exit(0);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuKbnSairActionPerformed
 
     /**
      * @param args the command line arguments

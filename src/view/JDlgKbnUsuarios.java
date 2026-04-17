@@ -47,7 +47,7 @@ public class JDlgKbnUsuarios extends javax.swing.JDialog {
     private void desabilitar() {
         jTxtNome.setEnabled(false);
         jTxtApelido.setEnabled(false);
-        jTxtCpf.setEnabled(true);
+        jTxtCpf.setEnabled(false);
         jTxtDataNascimento.setEnabled(false);
         jPwfSenha.setEnabled(false);
         jCboNivel.setEnabled(false);

@@ -290,7 +290,7 @@ public class JDlgKbnAnimais extends javax.swing.JDialog {
 
     private void jBtnKbnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnPesquisarActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null, "Entre com o código do produto", "", JOptionPane.YES_NO_OPTION);
+        JOptionPane.showInputDialog(null, "Entre com o codguin de Produto.");
     }//GEN-LAST:event_jBtnKbnPesquisarActionPerformed
 
     /**
