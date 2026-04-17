@@ -22,7 +22,7 @@ public class JDlgKbnUsuarios extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         setTitle("Telas de Usuários");
-        this.setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
         desabilitar();
 
     }

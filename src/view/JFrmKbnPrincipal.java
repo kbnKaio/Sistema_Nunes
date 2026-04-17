@@ -28,16 +28,16 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar1 = new javax.swing.JMenuBar();
+        jMnuBKbnMenuBar = new javax.swing.JMenuBar();
         jMnuKbnCadastros = new javax.swing.JMenu();
         jMnuKbnUsuarios = new javax.swing.JMenuItem();
         jMnuKbnClientes = new javax.swing.JMenuItem();
         jMnuKbnFornecedores = new javax.swing.JMenuItem();
         jMnuKbnAnimais = new javax.swing.JMenuItem();
         jMnuKbnVendedores = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMnuKbnSair = new javax.swing.JMenuItem();
         jMnuKbnMovimentos = new javax.swing.JMenu();
-        jMnuCompras = new javax.swing.JMenuItem();
+        jMnuKbnCompras = new javax.swing.JMenuItem();
         jMnuKbnCompraProdutos = new javax.swing.JMenuItem();
         jMnuKbnVendas = new javax.swing.JMenuItem();
         jMnuKbnVendasProdutos = new javax.swing.JMenuItem();
@@ -90,17 +90,17 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         });
         jMnuKbnCadastros.add(jMnuKbnVendedores);
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
-        jMenuItem1.setText("Sair");
-        jMnuKbnCadastros.add(jMenuItem1);
+        jMnuKbnSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuKbnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
+        jMnuKbnSair.setText("Sair");
+        jMnuKbnCadastros.add(jMnuKbnSair);
 
-        jMenuBar1.add(jMnuKbnCadastros);
+        jMnuBKbnMenuBar.add(jMnuKbnCadastros);
 
         jMnuKbnMovimentos.setText("Kbn_Movimentos");
 
-        jMnuCompras.setText("Kbn_Compras");
-        jMnuKbnMovimentos.add(jMnuCompras);
+        jMnuKbnCompras.setText("Kbn_Compras");
+        jMnuKbnMovimentos.add(jMnuKbnCompras);
 
         jMnuKbnCompraProdutos.setText("Kbn_Compra_Produtos");
         jMnuKbnMovimentos.add(jMnuKbnCompraProdutos);
@@ -111,9 +111,9 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnVendasProdutos.setText("Kbn_Vendas_Produtos");
         jMnuKbnMovimentos.add(jMnuKbnVendasProdutos);
 
-        jMenuBar1.add(jMnuKbnMovimentos);
+        jMnuBKbnMenuBar.add(jMnuKbnMovimentos);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMnuBKbnMenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -190,15 +190,15 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMnuCompras;
+    private javax.swing.JMenuBar jMnuBKbnMenuBar;
     private javax.swing.JMenuItem jMnuKbnAnimais;
     private javax.swing.JMenu jMnuKbnCadastros;
     private javax.swing.JMenuItem jMnuKbnClientes;
     private javax.swing.JMenuItem jMnuKbnCompraProdutos;
+    private javax.swing.JMenuItem jMnuKbnCompras;
     private javax.swing.JMenuItem jMnuKbnFornecedores;
     private javax.swing.JMenu jMnuKbnMovimentos;
+    private javax.swing.JMenuItem jMnuKbnSair;
     private javax.swing.JMenuItem jMnuKbnUsuarios;
     private javax.swing.JMenuItem jMnuKbnVendas;
     private javax.swing.JMenuItem jMnuKbnVendasProdutos;

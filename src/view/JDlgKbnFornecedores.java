@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author u08016696180
@@ -17,40 +19,56 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         setTitle("Tela de fornecedores");
-         this.setLocationRelativeTo(null);
-         desabilitar();
+        setLocationRelativeTo(null);
+        desabilitar();
     }
+
     public void habilitar() {
-        jTxtNome.setEnabled(true);
-        jTxtApelido.setEnabled(true);
-        jTxtCpf.setEnabled(true);
-        jTxtDataNascimento.setEnabled(true);
-        jPwfSenha.setEnabled(true);
-        jCboNivel.setEnabled(true);
-        JChbAtivo.setEnabled(true);
-        jBtnAlterar.setEnabled(false);
-        jBtnCancelar.setEnabled(true);
-        jBtnConfirmar.setEnabled(true);
-        jBtnExcluir.setEnabled(false);
-        jBtnIncluir.setEnabled(false);
-        jBtnPesquisar.setEnabled(false);
+        jTxtKbnNome.setEnabled(true);
+        jTxtKbnEmail.setEnabled(true);
+        jTxtKbnCep.setEnabled(true);
+        jTxtKbnEndereco.setEnabled(true);
+        jTxtKbnCidade.setEnabled(true);
+        jTxtKbnCnpj.setEnabled(true);
+        jTxtKbnBairro.setEnabled(true);
+        jTxtKbnTelefone.setEnabled(true);
+        jTxtKbnNumero.setEnabled(true);
+        jTxtKbnDataCadastro.setEnabled(true);
+        jTxtKbnWhatsapp.setEnabled(true);
+        jTxtKbnEstado.setEnabled(true);
+        jTxtKbnDescontos.setEnabled(true);
+        jTxtKbnResponsavel.setEnabled(true);
+        jBtnKbnAlterar.setEnabled(false);
+        jBtnKbnCancelar.setEnabled(true);
+        jBtnKbnConfirmar.setEnabled(true);
+        jBtnKbnExcluir.setEnabled(false);
+        jBtnKbnIncluir.setEnabled(false);
+        jBtnKbnPesquisar.setEnabled(false);
 
     }
 
     private void desabilitar() {
-        jTxtNome.setEnabled(false);
-        jTxtApelido.setEnabled(false);
-        jTxtCpf.setEnabled(true);
-        jTxtDataNascimento.setEnabled(false);
-        jPwfSenha.setEnabled(false);
-        jCboNivel.setEnabled(false);
-        JChbAtivo.setEnabled(false);
-        jBtnAlterar.setEnabled(true);
-        jBtnCancelar.setEnabled(false);
-        jBtnConfirmar.setEnabled(false);
-        jBtnExcluir.setEnabled(true);
-        jBtnIncluir.setEnabled(true);
-        jBtnPesquisar.setEnabled(true);
+        jTxtKbnNome.setEnabled(false);
+        jTxtKbnEmail.setEnabled(false);
+        jTxtKbnCep.setEnabled(false);
+        jTxtKbnEndereco.setEnabled(false);
+        jTxtKbnCidade.setEnabled(false);
+        jTxtKbnCnpj.setEnabled(false);
+        jTxtKbnBairro.setEnabled(false);
+        jTxtKbnTelefone.setEnabled(false);
+        jTxtKbnNumero.setEnabled(false);
+        jTxtKbnDataCadastro.setEnabled(false);
+        jTxtKbnWhatsapp.setEnabled(false);
+        jTxtKbnEstado.setEnabled(false);
+        jTxtKbnDescontos.setEnabled(false);
+        jTxtKbnResponsavel.setEnabled(false);
+        jBtnKbnAlterar.setEnabled(true);
+        jBtnKbnCancelar.setEnabled(false);
+        jBtnKbnConfirmar.setEnabled(false);
+        jBtnKbnExcluir.setEnabled(true);
+        jBtnKbnIncluir.setEnabled(true);
+        jBtnKbnPesquisar.setEnabled(true);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -91,14 +109,14 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
         jTxtKbnWhatsapp = new javax.swing.JTextField();
         jTxtKbnDescontos = new javax.swing.JTextField();
         jTxtKbnResponsavel = new javax.swing.JTextField();
-        jChAtivo = new javax.swing.JCheckBox();
+        jChKbnAtivo = new javax.swing.JCheckBox();
         jLabel16 = new javax.swing.JLabel();
-        jBtnIncluir = new javax.swing.JButton();
-        jBtnCancelar = new javax.swing.JButton();
-        jBtnExcluir = new javax.swing.JButton();
-        jBtnAlterar = new javax.swing.JButton();
-        jBtnPesquisar = new javax.swing.JButton();
-        jBtnConfirmar = new javax.swing.JButton();
+        jBtnKbnIncluir = new javax.swing.JButton();
+        jBtnKbnCancelar = new javax.swing.JButton();
+        jBtnKbnExcluir = new javax.swing.JButton();
+        jBtnKbnAlterar = new javax.swing.JButton();
+        jBtnKbnPesquisar = new javax.swing.JButton();
+        jBtnKbnConfirmar = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -134,37 +152,55 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
 
         jLabel15.setText("Ativo");
 
-        jTxtKbnEmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtKbnEmailActionPerformed(evt);
-            }
-        });
-
-        jTxtKbnEstado.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtKbnEstadoActionPerformed(evt);
-            }
-        });
-
         jLabel16.setText("Ativo");
 
-        jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
-        jBtnIncluir.setText("Incluir");
+        jBtnKbnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnKbnIncluir.setText("Incluir");
+        jBtnKbnIncluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnIncluirActionPerformed(evt);
+            }
+        });
 
-        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar_1.png"))); // NOI18N
-        jBtnCancelar.setText("Cancelar");
+        jBtnKbnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar_1.png"))); // NOI18N
+        jBtnKbnCancelar.setText("Cancelar");
+        jBtnKbnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnCancelarActionPerformed(evt);
+            }
+        });
 
-        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
-        jBtnExcluir.setText("Excluir");
+        jBtnKbnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnKbnExcluir.setText("Excluir");
+        jBtnKbnExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnExcluirActionPerformed(evt);
+            }
+        });
 
-        jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar_1.png"))); // NOI18N
-        jBtnAlterar.setText("Alterar");
+        jBtnKbnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar_1.png"))); // NOI18N
+        jBtnKbnAlterar.setText("Alterar");
+        jBtnKbnAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnAlterarActionPerformed(evt);
+            }
+        });
 
-        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar_1.png"))); // NOI18N
-        jBtnPesquisar.setText("Pesquisar");
+        jBtnKbnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar_1.png"))); // NOI18N
+        jBtnKbnPesquisar.setText("Pesquisar");
+        jBtnKbnPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnPesquisarActionPerformed(evt);
+            }
+        });
 
-        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
-        jBtnConfirmar.setText("Confirmar");
+        jBtnKbnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        jBtnKbnConfirmar.setText("Confirmar");
+        jBtnKbnConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnConfirmarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -176,112 +212,102 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTxtKbnNome, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(jLabel4)
+                                .addGap(131, 131, 131)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(jTxtKbnCnpj, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
-                                                    .addComponent(jTxtKbnWhatsapp)))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel5)
-                                                    .addComponent(jTxtKbnCep, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(71, 71, 71)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(jLabel12)
-                                                    .addComponent(jLabel6)
-                                                    .addComponent(jLabel9)
-                                                    .addComponent(jTxtKbnEndereco, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
-                                                    .addComponent(jTxtKbnCidade))))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                        .addComponent(jLabel8)
+                                        .addGap(0, 0, Short.MAX_VALUE))
                                     .addGroup(layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel8)
-                                            .addComponent(jTxtKbnEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 0, Short.MAX_VALUE))))
+                                            .addComponent(jLabel5)
+                                            .addComponent(jTxtKbnCep, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(71, 71, 71)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jTxtKbnCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addComponent(jLabel12)
+                                                .addComponent(jLabel6)
+                                                .addComponent(jLabel9)
+                                                .addComponent(jTxtKbnEndereco, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
+                                                .addComponent(jTxtKbnCidade)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTxtKbnTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel7)
                                     .addComponent(jLabel10)
-                                    .addComponent(jLabel13)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel1)
-                                            .addComponent(jLabel4)
-                                            .addComponent(jTxtKbnDescontos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTxtKbnNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTxtKbnEstado, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(jLabel14)
-                                                    .addComponent(jTxtKbnDataCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
-                                                    .addComponent(jTxtKbnResponsavel)))
                                             .addGroup(layout.createSequentialGroup()
-                                                .addGap(67, 67, 67)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addComponent(jLabel1)
+                                                    .addComponent(jTxtKbnNumero, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                                                    .addComponent(jTxtKbnEstado, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                                                    .addComponent(jTxtKbnDescontos))
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel2)
-                                                    .addComponent(jLabel11)
-                                                    .addComponent(jTxtKbnBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                            .addComponent(jLabel14)
+                                                            .addComponent(jTxtKbnDataCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
+                                                            .addComponent(jTxtKbnResponsavel)))
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addGap(67, 67, 67)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(jLabel11)
+                                                            .addComponent(jTxtKbnBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(jLabel2)))))
+                                            .addComponent(jLabel13)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(jTxtKbnNome, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jTxtKbnEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGap(71, 71, 71)
-                                        .addComponent(jLabel3)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel3)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel16)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jChKbnAtivo))
+                                            .addComponent(jTxtKbnWhatsapp, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(71, 71, 71)
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jChAtivo)))
-                        .addGap(26, 26, 26))
+                        .addComponent(jLabel15)
+                        .addGap(122, 122, 122))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBtnIncluir)
+                        .addComponent(jBtnKbnIncluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jBtnCancelar)
+                        .addComponent(jBtnKbnCancelar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jBtnExcluir)
+                        .addComponent(jBtnKbnExcluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jBtnAlterar)
+                        .addComponent(jBtnKbnAlterar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnPesquisar)
+                        .addComponent(jBtnKbnPesquisar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnConfirmar)
-                        .addGap(0, 67, Short.MAX_VALUE))))
+                        .addComponent(jBtnKbnConfirmar)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel2))
-                                .addGap(12, 12, 12))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jTxtKbnNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTxtKbnEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTxtKbnCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addGap(26, 26, 26))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(18, 18, 18)))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtKbnNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtKbnEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtKbnCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel4))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTxtKbnEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -303,46 +329,69 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
                     .addComponent(jLabel11)
                     .addComponent(jLabel12))
                 .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtKbnEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtKbnDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtKbnWhatsapp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel14))
-                .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTxtKbnDescontos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTxtKbnResponsavel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jChAtivo)
-                        .addGroup(layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTxtKbnEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTxtKbnDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTxtKbnWhatsapp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel14))
+                        .addGap(9, 9, 9)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel16))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jTxtKbnDescontos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTxtKbnResponsavel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel16)
+                            .addComponent(jChKbnAtivo))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnIncluir)
-                    .addComponent(jBtnCancelar)
-                    .addComponent(jBtnExcluir)
-                    .addComponent(jBtnAlterar)
-                    .addComponent(jBtnPesquisar)
-                    .addComponent(jBtnConfirmar))
+                    .addComponent(jBtnKbnIncluir)
+                    .addComponent(jBtnKbnCancelar)
+                    .addComponent(jBtnKbnExcluir)
+                    .addComponent(jBtnKbnAlterar)
+                    .addComponent(jBtnKbnPesquisar)
+                    .addComponent(jBtnKbnConfirmar))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtKbnEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtKbnEmailActionPerformed
+    private void jBtnKbnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnIncluirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtKbnEmailActionPerformed
+        habilitar();
+    }//GEN-LAST:event_jBtnKbnIncluirActionPerformed
 
-    private void jTxtKbnEstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtKbnEstadoActionPerformed
+    private void jBtnKbnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnCancelarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtKbnEstadoActionPerformed
+        desabilitar();
+    }//GEN-LAST:event_jBtnKbnCancelarActionPerformed
+
+    private void jBtnKbnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnExcluirActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "Confirmar Exclusão?", "Selecione", JOptionPane.YES_NO_OPTION);
+    }//GEN-LAST:event_jBtnKbnExcluirActionPerformed
+
+    private void jBtnKbnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnKbnAlterarActionPerformed
+
+    private void jBtnKbnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnPesquisarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "Entre com o código do Fornecedor.");
+    }//GEN-LAST:event_jBtnKbnPesquisarActionPerformed
+
+    private void jBtnKbnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnConfirmarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnKbnConfirmarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -353,31 +402,18 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgKbnFornecedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgKbnFornecedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgKbnFornecedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgKbnFornecedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
+        //</editor-fold>
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 JDlgKbnFornecedores dialog = new JDlgKbnFornecedores(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+
+                dialog.addWindowListener(
+                        new java.awt.event.WindowAdapter() {
                     @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
+                    public void windowClosing(java.awt.event.WindowEvent e
+                    ) {
                         System.exit(0);
                     }
                 });
@@ -387,14 +423,14 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtnAlterar;
-    private javax.swing.JButton jBtnCancelar;
-    private javax.swing.JButton jBtnConfirmar;
-    private javax.swing.JButton jBtnExcluir;
-    private javax.swing.JButton jBtnIncluir;
-    private javax.swing.JButton jBtnPesquisar;
+    private javax.swing.JButton jBtnKbnAlterar;
+    private javax.swing.JButton jBtnKbnCancelar;
+    private javax.swing.JButton jBtnKbnConfirmar;
+    private javax.swing.JButton jBtnKbnExcluir;
+    private javax.swing.JButton jBtnKbnIncluir;
+    private javax.swing.JButton jBtnKbnPesquisar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jChAtivo;
+    private javax.swing.JCheckBox jChKbnAtivo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

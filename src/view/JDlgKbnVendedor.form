@@ -31,45 +31,42 @@
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtTelefone" alignment="0" pref="124" max="32767" attributes="0"/>
-                          <Component id="jTxtNome" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTxtKbnTelefone" alignment="0" pref="124" max="32767" attributes="0"/>
+                          <Component id="jTxtKbnNome" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtCpf" min="-2" pref="141" max="-2" attributes="0"/>
+                          <Component id="jTxtKbnCpf" min="-2" pref="141" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtEmail" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
+                          <Component id="jTxtKbnEmail" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
                           <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField3" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
+                          <Component id="jTxtKbnSalario" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jFmtDataNascimento" min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="jFmtKbnDataAdmissao" min="-2" pref="118" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jChbAtivo" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jBtnIncluir" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jBtnExcluir" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jBtnCancelar" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jBtnAlterar" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jBtnPesquisar" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jBtnConfirmar" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jChbKbnAtivo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jBtnKbnIncluir" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBtnKbnExcluir" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBtnKbnCancelar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBtnKbnAlterar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBtnKbnPesquisar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBtnKbnConfirmar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -82,11 +79,11 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jTxtTelefone" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtKbnTelefone" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jFmtDataNascimento" min="-2" max="-2" attributes="0"/>
+                      <Component id="jFmtKbnDataAdmissao" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -95,8 +92,8 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTxtNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtCpf" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTxtKbnNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTxtKbnCpf" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -104,29 +101,29 @@
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTxtEmail" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtKbnEmail" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtKbnSalario" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                  <Component id="jChbAtivo" min="-2" max="-2" attributes="0"/>
+                  <Component id="jChbKbnAtivo" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtnIncluir" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnAlterar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnConfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnKbnIncluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnKbnExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnKbnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnKbnAlterar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnKbnPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnKbnConfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="61" max="32767" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -167,21 +164,21 @@
         <Property name="text" type="java.lang.String" value="Ativo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jChbAtivo">
+    <Component class="javax.swing.JCheckBox" name="jChbKbnAtivo">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtNome">
+    <Component class="javax.swing.JTextField" name="jTxtKbnNome">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtCpf">
+    <Component class="javax.swing.JTextField" name="jTxtKbnCpf">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtEmail">
+    <Component class="javax.swing.JTextField" name="jTxtKbnEmail">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="jTxtKbnSalario">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtTelefone">
+    <Component class="javax.swing.JTextField" name="jTxtKbnTelefone">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtDataNascimento">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtKbnDataAdmissao">
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnIncluir">
+    <Component class="javax.swing.JButton" name="jBtnKbnIncluir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/incluir_1.png"/>
@@ -189,7 +186,7 @@
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnExcluir">
+    <Component class="javax.swing.JButton" name="jBtnKbnExcluir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/Excluir_1.png"/>
@@ -197,7 +194,7 @@
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnCancelar">
+    <Component class="javax.swing.JButton" name="jBtnKbnCancelar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/cancelar_1.png"/>
@@ -205,7 +202,7 @@
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnAlterar">
+    <Component class="javax.swing.JButton" name="jBtnKbnAlterar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/alterar.png"/>
@@ -213,7 +210,7 @@
         <Property name="text" type="java.lang.String" value="Alterar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnPesquisar">
+    <Component class="javax.swing.JButton" name="jBtnKbnPesquisar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/pesquisar.png"/>
@@ -221,7 +218,7 @@
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnConfirmar">
+    <Component class="javax.swing.JButton" name="jBtnKbnConfirmar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/confirmar.png"/>

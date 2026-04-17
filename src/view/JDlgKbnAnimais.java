@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author u08016696180
@@ -16,7 +18,44 @@ public class JDlgKbnAnimais extends javax.swing.JDialog {
     public JDlgKbnAnimais(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        this.setLocationRelativeTo(null);
+        setTitle("Tela de Animais");
+        setLocationRelativeTo(null);
+        desabilitar();
+    }
+
+    public void habilitar() {
+        jBtnKbnAlterar.setEnabled(false);
+        jBtnKbnCancelar.setEnabled(true);
+        jBtnKbnConfirmar.setEnabled(true);
+        jBtnKbnExcluir.setEnabled(false);
+        jBtnKbnIncluir.setEnabled(false);
+        jBtnKbnPesquisar.setEnabled(false);
+        jTxtKbnNome.setEnabled(true);
+        jTxtKbnPreco.setEnabled(true);
+        jTxtKbnRaca.setEnabled(true);
+        jCboKbnEspecie.setEnabled(true);
+        jCboKbnComboBox.setEnabled(true);
+        jCboKbnStatus.setEnabled(true);
+         jChbKbnDisponivel.setEnabled(true);
+    }
+
+    /**
+     *
+     */
+    public void desabilitar() {
+        jBtnKbnAlterar.setEnabled(true);
+        jBtnKbnCancelar.setEnabled(false);
+        jBtnKbnConfirmar.setEnabled(false);
+        jBtnKbnExcluir.setEnabled(true);
+        jBtnKbnIncluir.setEnabled(true);
+        jBtnKbnPesquisar.setEnabled(true);
+        jTxtKbnNome.setEnabled(false);
+        jTxtKbnPreco.setEnabled(false);
+        jTxtKbnRaca.setEnabled(false);
+        jCboKbnEspecie.setEnabled(false);
+        jCboKbnComboBox.setEnabled(false);
+        jCboKbnStatus.setEnabled(false);
+        jChbKbnDisponivel.setEnabled(false);
     }
 
     /**
@@ -35,19 +74,19 @@ public class JDlgKbnAnimais extends javax.swing.JDialog {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTxtNome = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jCboEspecie = new javax.swing.JComboBox<>();
-        jTxtRaca = new javax.swing.JTextField();
-        jTxtPreco = new javax.swing.JTextField();
-        jCboStatus = new javax.swing.JComboBox<>();
-        jChbDisponivel = new javax.swing.JCheckBox();
-        jBtnIncluir = new javax.swing.JButton();
-        jBtnExcluir = new javax.swing.JButton();
-        jBtnConfirmar = new javax.swing.JButton();
-        jBtnPesquisar = new javax.swing.JButton();
-        jBtnCancelar = new javax.swing.JButton();
-        jBtnAlterar = new javax.swing.JButton();
+        jTxtKbnNome = new javax.swing.JTextField();
+        jCboKbnComboBox = new javax.swing.JComboBox<>();
+        jCboKbnEspecie = new javax.swing.JComboBox<>();
+        jTxtKbnRaca = new javax.swing.JTextField();
+        jTxtKbnPreco = new javax.swing.JTextField();
+        jCboKbnStatus = new javax.swing.JComboBox<>();
+        jChbKbnDisponivel = new javax.swing.JCheckBox();
+        jBtnKbnIncluir = new javax.swing.JButton();
+        jBtnKbnExcluir = new javax.swing.JButton();
+        jBtnKbnConfirmar = new javax.swing.JButton();
+        jBtnKbnPesquisar = new javax.swing.JButton();
+        jBtnKbnCancelar = new javax.swing.JButton();
+        jBtnKbnAlterar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -65,124 +104,194 @@ public class JDlgKbnAnimais extends javax.swing.JDialog {
 
         jLabel7.setText("Disponível");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCboKbnComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jCboEspecie.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCboKbnEspecie.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jCboStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCboKbnStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir_1.png"))); // NOI18N
-        jBtnIncluir.setText("Incluir");
+        jBtnKbnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir_1.png"))); // NOI18N
+        jBtnKbnIncluir.setText("Incluir");
+        jBtnKbnIncluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnIncluirActionPerformed(evt);
+            }
+        });
 
-        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
-        jBtnExcluir.setText("Excluir");
+        jBtnKbnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnKbnExcluir.setText("Excluir");
+        jBtnKbnExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnExcluirActionPerformed(evt);
+            }
+        });
 
-        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
-        jBtnConfirmar.setText("Confirmar");
+        jBtnKbnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        jBtnKbnConfirmar.setText("Confirmar");
+        jBtnKbnConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnConfirmarActionPerformed(evt);
+            }
+        });
 
-        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
-        jBtnPesquisar.setText("Pesquisar");
+        jBtnKbnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnKbnPesquisar.setText("Pesquisar");
+        jBtnKbnPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnPesquisarActionPerformed(evt);
+            }
+        });
 
-        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
-        jBtnCancelar.setText("Cancelar");
+        jBtnKbnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnKbnCancelar.setText("Cancelar");
+        jBtnKbnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnCancelarActionPerformed(evt);
+            }
+        });
 
-        jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
-        jBtnAlterar.setText("Alterar");
+        jBtnKbnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
+        jBtnKbnAlterar.setText("Alterar");
+        jBtnKbnAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnKbnAlterarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(25, 25, 25))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jBtnKbnIncluir)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jBtnKbnExcluir))
+                                            .addComponent(jTxtKbnNome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addComponent(jCboKbnStatus, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jCboKbnComboBox, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTxtNome, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE))
-                                .addGap(31, 31, 31)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCboEspecie, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2)))
+                                .addComponent(jBtnKbnConfirmar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBtnKbnPesquisar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBtnKbnCancelar))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(58, 58, 58)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jCboKbnEspecie, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(63, 63, 63)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTxtPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel5))))
-                        .addGap(37, 37, 37)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jTxtKbnRaca, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel5)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addGap(37, 37, 37)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTxtRaca, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3)))
-                            .addComponent(jCboStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jChbDisponivel)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBtnIncluir)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnExcluir)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnConfirmar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnPesquisar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnCancelar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnAlterar)))
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jChbKbnDisponivel)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jBtnKbnAlterar))
+                    .addComponent(jTxtKbnPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCboEspecie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtRaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(4, 4, 4)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel5))
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTxtKbnRaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jCboKbnEspecie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTxtKbnPreco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(jChbKbnDisponivel))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTxtKbnNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCboKbnStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jCboStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTxtPreco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jChbDisponivel)
-                .addGap(27, 27, 27)
+                            .addComponent(jCboKbnComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7))))
+                .addGap(87, 87, 87)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnIncluir)
-                    .addComponent(jBtnExcluir)
-                    .addComponent(jBtnConfirmar)
-                    .addComponent(jBtnPesquisar)
-                    .addComponent(jBtnCancelar)
-                    .addComponent(jBtnAlterar))
-                .addContainerGap(85, Short.MAX_VALUE))
+                    .addComponent(jBtnKbnIncluir)
+                    .addComponent(jBtnKbnExcluir)
+                    .addComponent(jBtnKbnConfirmar)
+                    .addComponent(jBtnKbnPesquisar)
+                    .addComponent(jBtnKbnCancelar)
+                    .addComponent(jBtnKbnAlterar))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnKbnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnConfirmarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnKbnConfirmarActionPerformed
+
+    private void jBtnKbnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnKbnAlterarActionPerformed
+
+    private void jBtnKbnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnKbnIncluirActionPerformed
+
+    private void jBtnKbnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnCancelarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnKbnCancelarActionPerformed
+
+    private void jBtnKbnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnExcluirActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "confimar exclusao", "selecione", JOptionPane.YES_NO_OPTION);
+
+    }//GEN-LAST:event_jBtnKbnExcluirActionPerformed
+
+    private void jBtnKbnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnPesquisarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "Entre com o código do produto", "", JOptionPane.YES_NO_OPTION);
+    }//GEN-LAST:event_jBtnKbnPesquisarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,16 +337,16 @@ public class JDlgKbnAnimais extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtnAlterar;
-    private javax.swing.JButton jBtnCancelar;
-    private javax.swing.JButton jBtnConfirmar;
-    private javax.swing.JButton jBtnExcluir;
-    private javax.swing.JButton jBtnIncluir;
-    private javax.swing.JButton jBtnPesquisar;
-    private javax.swing.JComboBox<String> jCboEspecie;
-    private javax.swing.JComboBox<String> jCboStatus;
-    private javax.swing.JCheckBox jChbDisponivel;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton jBtnKbnAlterar;
+    private javax.swing.JButton jBtnKbnCancelar;
+    private javax.swing.JButton jBtnKbnConfirmar;
+    private javax.swing.JButton jBtnKbnExcluir;
+    private javax.swing.JButton jBtnKbnIncluir;
+    private javax.swing.JButton jBtnKbnPesquisar;
+    private javax.swing.JComboBox<String> jCboKbnComboBox;
+    private javax.swing.JComboBox<String> jCboKbnEspecie;
+    private javax.swing.JComboBox<String> jCboKbnStatus;
+    private javax.swing.JCheckBox jChbKbnDisponivel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -245,8 +354,8 @@ public class JDlgKbnAnimais extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField jTxtNome;
-    private javax.swing.JTextField jTxtPreco;
-    private javax.swing.JTextField jTxtRaca;
+    private javax.swing.JTextField jTxtKbnNome;
+    private javax.swing.JTextField jTxtKbnPreco;
+    private javax.swing.JTextField jTxtKbnRaca;
     // End of variables declaration//GEN-END:variables
 }
