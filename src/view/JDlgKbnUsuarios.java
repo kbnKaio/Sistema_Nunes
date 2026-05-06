@@ -282,7 +282,7 @@ public class JDlgKbnUsuarios extends javax.swing.JDialog {
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null, "Entre com o codguin de usuário.");
+        JOptionPane.showInputDialog(null, "Entre com o código de usuário.");
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     /**

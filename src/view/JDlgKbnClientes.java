@@ -28,7 +28,7 @@ public final class JDlgKbnClientes extends javax.swing.JDialog {
         jTxtKbnEmail.setEnabled(true);
         jTxtKbnCep.setEnabled(true);
         jTxtKbnEndereco.setEnabled(true);
-        jFrmKbnDataNascimento.setEditable(true);
+        jFmtKbnDataNascimento.setEnabled(true);
         jChoAtivo.setEnabled(true);
         jCboSexo.setEnabled(true);
         jTxtKbnCidade.setEnabled(true);
@@ -53,7 +53,7 @@ public final class JDlgKbnClientes extends javax.swing.JDialog {
         jTxtKbnEmail.setEnabled(false);
         jTxtKbnCep.setEnabled(false);
         jTxtKbnEndereco.setEnabled(false);
-        jFrmKbnDataNascimento.setEditable(false);
+        jFmtKbnDataNascimento.setEnabled(false);
         jChoAtivo.setEnabled(false);
         jCboSexo.setEnabled(false);
         jTxtKbnCidade.setEnabled(false);
@@ -106,7 +106,7 @@ public final class JDlgKbnClientes extends javax.swing.JDialog {
         jTxtKbnEstado = new javax.swing.JTextField();
         jTxtKbnDataCadastro = new javax.swing.JTextField();
         jChoAtivo = new javax.swing.JCheckBox();
-        jFrmKbnDataNascimento = new javax.swing.JFormattedTextField();
+        jFmtKbnDataNascimento = new javax.swing.JFormattedTextField();
         jCboSexo = new javax.swing.JComboBox<>();
         jBtnKbnIncluir = new javax.swing.JButton();
         jBtnKbnAlterar = new javax.swing.JButton();
@@ -208,7 +208,7 @@ public final class JDlgKbnClientes extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jFrmKbnDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jFmtKbnDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(23, 23, 23)
                         .addComponent(jCboSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
@@ -322,7 +322,7 @@ public final class JDlgKbnClientes extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jFrmKbnDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jFmtKbnDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jCboSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(30, 30, 30))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -369,7 +369,7 @@ public final class JDlgKbnClientes extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnKbnExcluirActionPerformed
 
     private void jBtnKbnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnPesquisarActionPerformed
-        JOptionPane.showInputDialog(null, "Entre com o codguin de cliente.");
+        JOptionPane.showInputDialog(null, "Entre com o código de cliente.");
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnKbnPesquisarActionPerformed
 
@@ -424,8 +424,8 @@ public final class JDlgKbnClientes extends javax.swing.JDialog {
     private javax.swing.JButton jBtnKbnPesquisar;
     private javax.swing.JComboBox<String> jCboSexo;
     private javax.swing.JCheckBox jChoAtivo;
+    private javax.swing.JFormattedTextField jFmtKbnDataNascimento;
     private javax.swing.JFormattedTextField jFrmKbnCpf;
-    private javax.swing.JFormattedTextField jFrmKbnDataNascimento;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

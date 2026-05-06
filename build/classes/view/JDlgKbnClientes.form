@@ -27,7 +27,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jFrmKbnDataNascimento" min="-2" pref="143" max="-2" attributes="0"/>
+                      <Component id="jFmtKbnDataNascimento" min="-2" pref="143" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                       <Component id="jCboSexo" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -166,7 +166,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jFrmKbnDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jFmtKbnDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jCboSexo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -285,7 +285,7 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="jChoAtivo">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFrmKbnDataNascimento">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtKbnDataNascimento">
     </Component>
     <Component class="javax.swing.JComboBox" name="jCboSexo">
       <Properties>

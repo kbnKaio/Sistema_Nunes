@@ -385,7 +385,7 @@ public class JDlgKbnFornecedores extends javax.swing.JDialog {
 
     private void jBtnKbnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnPesquisarActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null, "Entre com o código do Fornecedor.");
+        JOptionPane.showInputDialog(null, "Entre com o código do Fornecedor.");
     }//GEN-LAST:event_jBtnKbnPesquisarActionPerformed
 
     private void jBtnKbnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKbnConfirmarActionPerformed
