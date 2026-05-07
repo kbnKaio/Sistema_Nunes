@@ -38,9 +38,7 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnSair = new javax.swing.JMenuItem();
         jMnuKbnMovimentos = new javax.swing.JMenu();
         jMnuKbnCompras = new javax.swing.JMenuItem();
-        jMnuKbnCompraProdutos = new javax.swing.JMenuItem();
         jMnuKbnVendas = new javax.swing.JMenuItem();
-        jMnuKbnVendasProdutos = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -79,7 +77,7 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnCadastros.add(jMnuKbnFornecedores);
 
         jMnuKbnAnimais.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuKbnAnimais.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
+        jMnuKbnAnimais.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Dog-1--Streamline-Plump-Remix.png"))); // NOI18N
         jMnuKbnAnimais.setText("Kbn_Animais");
         jMnuKbnAnimais.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +87,7 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
         jMnuKbnCadastros.add(jMnuKbnAnimais);
 
         jMnuKbnVendedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuKbnVendedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
+        jMnuKbnVendedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/People.png"))); // NOI18N
         jMnuKbnVendedores.setText("Kbn_Vendedor");
         jMnuKbnVendedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,17 +110,13 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
 
         jMnuKbnMovimentos.setText("Kbn_Movimentos");
 
+        jMnuKbnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Buy.png"))); // NOI18N
         jMnuKbnCompras.setText("Kbn_Compras");
         jMnuKbnMovimentos.add(jMnuKbnCompras);
 
-        jMnuKbnCompraProdutos.setText("Kbn_Compra_Produtos");
-        jMnuKbnMovimentos.add(jMnuKbnCompraProdutos);
-
+        jMnuKbnVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuKbnVendas.setText("Kbn_Vendas");
         jMnuKbnMovimentos.add(jMnuKbnVendas);
-
-        jMnuKbnVendasProdutos.setText("Kbn_Vendas_Produtos");
-        jMnuKbnMovimentos.add(jMnuKbnVendasProdutos);
 
         jMnuBKbnMenuBar.add(jMnuKbnMovimentos);
 
@@ -218,14 +212,12 @@ public class JFrmKbnPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMnuKbnAnimais;
     private javax.swing.JMenu jMnuKbnCadastros;
     private javax.swing.JMenuItem jMnuKbnClientes;
-    private javax.swing.JMenuItem jMnuKbnCompraProdutos;
     private javax.swing.JMenuItem jMnuKbnCompras;
     private javax.swing.JMenuItem jMnuKbnFornecedores;
     private javax.swing.JMenu jMnuKbnMovimentos;
     private javax.swing.JMenuItem jMnuKbnSair;
     private javax.swing.JMenuItem jMnuKbnUsuarios;
     private javax.swing.JMenuItem jMnuKbnVendas;
-    private javax.swing.JMenuItem jMnuKbnVendasProdutos;
     private javax.swing.JMenuItem jMnuKbnVendedores;
     // End of variables declaration//GEN-END:variables
 }

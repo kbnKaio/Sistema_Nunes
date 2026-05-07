@@ -4,7 +4,7 @@
  */
 package dao;
 
-import bean.Kbn_CompraProdutos;
+import bean.Kbn_Venda;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  *
  * @author u08016696180
  */
-public class DaoKbnCompraProdutos extends DaoKbnAbstract {
+public class DaoKbnVenda extends DaoKbnAbstract {
 
     /**
      *
@@ -24,7 +24,7 @@ public class DaoKbnCompraProdutos extends DaoKbnAbstract {
      */
     @Override
     public void insert(Object object) {
-        Kbn_CompraProdutos kbn_CompraProdutos = (Kbn_CompraProdutos) object;
+        Kbn_Venda kbn_Venda = (Kbn_Venda) object;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
@@ -33,20 +33,21 @@ public class DaoKbnCompraProdutos extends DaoKbnAbstract {
             password = "kaio_Nunes";
             Connection cnt;
             cnt = DriverManager.getConnection(url, user, password);
-            String sql = "insert into kbn_CompraProdutos values (?,?,?,?,?)";
+            String sql = "insert into kbn_Venda values (?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);
             pst.executeUpdate();
-            pst.setInt(1, kbn_CompraProdutos.getKbnIdCompraProduto());
-            pst.setInt(2, kbn_CompraProdutos.getKbnIdCompra());
-            pst.setInt(3, kbn_CompraProdutos.getKbnIdProduto());       
-            pst.setString(4, kbn_CompraProdutos.getKbnQuantitade());
-            pst.setDouble(5, kbn_CompraProdutos.getKbnPreco());
-            
+            pst.setInt(1, kbn_Venda.getKbnIdVenda());
+            pst.setInt(2, kbn_Venda.getKbnIdCliente()); //Kbn
+            pst.setInt(3, kbn_Venda.getKbnIdAnimal());
+            pst.setDouble(4, kbn_Venda.getKbnValorTotal());
+            pst.setDate(5, null);
+            pst.setString(6, kbn_Venda.getKbnFormaPagamento());
+            pst.setString(7, kbn_Venda.getKbnStatus());
 
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(DaoKbnCompraProdutos.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DaoKbnVenda.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(DaoKbnCompraProdutos.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DaoKbnVenda.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

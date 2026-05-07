@@ -59,7 +59,7 @@
                   <KeyStroke key="Ctrl+A"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/produto.png"/>
+                  <Image iconType="3" name="/imagens/Dog-1--Streamline-Plump-Remix.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kbn_Animais"/>
               </Properties>
@@ -73,7 +73,7 @@
                   <KeyStroke key="Ctrl+V"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/usuario.png"/>
+                  <Image iconType="3" name="/imagens/People.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kbn_Vendedor"/>
               </Properties>
@@ -104,22 +104,18 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMnuKbnCompras">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagens/Buy.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Kbn_Compras"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMnuKbnCompraProdutos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Kbn_Compra_Produtos"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMnuKbnVendas">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagens/produto.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Kbn_Vendas"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMnuKbnVendasProdutos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Kbn_Vendas_Produtos"/>
               </Properties>
             </MenuItem>
           </SubComponents>
